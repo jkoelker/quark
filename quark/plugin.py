@@ -28,6 +28,7 @@ from zope import sqlalchemy as zsa
 
 from quantum.common import exceptions
 from quantum.db import api as quantum_db_api
+from quantum.db import securitygroups_db as secdb
 from quantum import quantum_plugin_base_v2
 
 from quantum.openstack.common import importutils
@@ -37,6 +38,7 @@ from quantum.openstack.common import uuidutils
 from quark.api import extensions
 from quark.db import api as db_api
 from quark.db import models
+from quark.db import security_groups_db
 from quark import exceptions as quark_exceptions
 
 LOG = logging.getLogger("quantum.quark")
